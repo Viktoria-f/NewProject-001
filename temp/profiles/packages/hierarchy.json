@@ -1,0 +1,24 @@
+{
+  "b55e6aea-a0ed-4841-bdf9-b12c6b8d0b91": {
+    "assetUuid": "b55e6aea-a0ed-4841-bdf9-b12c6b8d0b91",
+    "animationUuid": "",
+    "expandLevels": [
+      "0",
+      "0_0",
+      "0_1",
+      "0_1_1"
+    ]
+  },
+  "29c487df-c126-4fdc-8002-d8f2bf51db84": {
+    "assetUuid": "29c487df-c126-4fdc-8002-d8f2bf51db84",
+    "animationUuid": "",
+    "expandLevels": [
+      "0",
+      "0_0_2",
+      "0_0_3",
+      "0_1",
+      "0_1_1",
+      "0_1_2"
+    ]
+  }
+}
