@@ -11,15 +11,15 @@
       "time": 1771598255347.1382
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\img": {
-      "time": 1772025680364.14,
+      "time": 1772707906489.5454,
       "uuid": "13473645-3ca3-466b-8a2c-d96db961ddbb"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\prefabs": {
-      "time": 1772022592687.5405,
+      "time": 1772710264565.852,
       "uuid": "f19be962-0e13-4c03-bfca-ce882e573c69"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\spine": {
-      "time": 1771598064495.835,
+      "time": 1774882775235.3005,
       "uuid": "5e236766-55ca-4548-a5e3-2806470c6cbe"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\img\\1 .png.meta": {
@@ -74,13 +74,13 @@
       "time": 1771503996788.8472
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\spine\\dynamite.atlas.meta": {
-      "time": 1771510450454.2952
+      "time": 1774882775234.3005
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\spine\\dynamite.json.meta": {
-      "time": 1771510450457.2854
+      "time": 1774882775235.3005
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\spine\\dynamite.png.meta": {
-      "time": 1771510450466.2559
+      "time": 1774882775236.3013
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\img\\2.png": {
       "time": 1766050585448.4097,
@@ -166,7 +166,7 @@
       "time": 1771598626148.9792
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\scripts": {
-      "time": 1771859547509.8965,
+      "time": 1774882736943.6592,
       "uuid": "ddfa10ca-6ceb-44fe-908f-0141ae11f8b2"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\scene.meta": {
@@ -180,7 +180,7 @@
       "time": 1771600398005.107
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\scene\\scene.scene": {
-      "time": 1772116193434.6885,
+      "time": 1774877881687.1023,
       "uuid": "29c487df-c126-4fdc-8002-d8f2bf51db84"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\box.prefab.meta": {
@@ -194,7 +194,7 @@
       "time": 1771608882653.3586
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\GridManager.ts": {
-      "time": 1772027470055.411,
+      "time": 1774883064927.505,
       "uuid": "554b36f0-39f3-4f14-bb83-d34c1d1c7848"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\symbols.meta": {
@@ -267,13 +267,6 @@
       "time": 1771859455589.2463,
       "uuid": "54a519dc-b61c-4885-bc8b-92652def30c1"
     },
-    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\RandomImage.ts.meta": {
-      "time": 1771859547511.8894
-    },
-    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\RandomImage.ts": {
-      "time": 1771861954003.4004,
-      "uuid": "84ef1399-a849-47d4-994b-167806403ba7"
-    },
     "C:\\cocos\\games\\NewProject-001\\assets\\img\\glow.png.meta": {
       "time": 1772022543021.567
     },
@@ -287,6 +280,188 @@
     "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\glow.prefab": {
       "time": 1772022592689.5344,
       "uuid": "dcc4359f-d301-43b2-9ad4-acf99376a6b6"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\img\\popup.png.meta": {
+      "time": 1772707938333.6328
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\img\\popup.png": {
+      "time": 1772707898113.703,
+      "uuid": "009c3074-5bdd-42be-bf67-bac31a0e9ed9"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\popupError.ts.meta": {
+      "time": 1772710068708.263
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\popupError.ts": {
+      "time": 1772712055147.2932,
+      "uuid": "899f54b7-f187-494e-aa82-b8be627dfdb3"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\popupError.prefab.meta": {
+      "time": 1772710264570.8357
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\popupError.prefab": {
+      "time": 1772710264567.8474,
+      "uuid": "d5d08855-ff5e-4fe6-b568-89a646277746"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils": {
+      "time": 1774882713673.4026,
+      "uuid": "b06b0d63-3251-40d0-98bd-2e181f9fdf2a"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils.meta": {
+      "time": 1774875566985.363
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils\\findCluster.ts.meta": {
+      "time": 1774875789295.6294
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils\\findCluster.ts": {
+      "time": 1774877383715.1267,
+      "uuid": "ef1aac11-51fb-4f56-b16d-29fbff1d5a72"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.atlas.meta": {
+      "time": 1774882775275.302
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.json.meta": {
+      "time": 1774882775266.3008
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.png.meta": {
+      "time": 1774882775293.301
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.atlas.meta": {
+      "time": 1774882775267.3015
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.json.meta": {
+      "time": 1774882775273.302
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.png.meta": {
+      "time": 1774882775309.3018
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.atlas.meta": {
+      "time": 1774882775288.301
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.json.meta": {
+      "time": 1774882775289.301
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.png.meta": {
+      "time": 1774882775306.3015
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.atlas.meta": {
+      "time": 1774882775299.3013
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.json.meta": {
+      "time": 1774882775304.301
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.png.meta": {
+      "time": 1774882775338.3018
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.atlas.meta": {
+      "time": 1774882775312.3015
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.json.meta": {
+      "time": 1774882775319.3018
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.png.meta": {
+      "time": 1774882775426.301
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.atlas.meta": {
+      "time": 1774882775325.3013
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.json.meta": {
+      "time": 1774882775330.3022
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.png.meta": {
+      "time": 1774882775444.3015
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.atlas.meta": {
+      "time": 1774882775414.302
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.json.meta": {
+      "time": 1774882775441.3013
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.png.meta": {
+      "time": 1774882775450.301
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.json": {
+      "time": 1759476420412.1213,
+      "uuid": "c87aa41a-bfb5-4b6b-91f9-5f2e05ba2493"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.atlas": {
+      "time": 1759476420416.1218,
+      "uuid": "3dd19090-eade-4a3c-b1cb-115e94bfd34c"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.json": {
+      "time": 1759476420418.1228,
+      "uuid": "ae16fec5-77f0-4d92-9432-be336c7601b0"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.atlas": {
+      "time": 1759476420409.1213,
+      "uuid": "ae5a104e-6774-4f43-9de5-e978c717590b"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.atlas": {
+      "time": 1759476420428.12,
+      "uuid": "7d82ec09-c3fe-4f86-b0b2-26e7d8d0c871"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.json": {
+      "time": 1759476420430.1206,
+      "uuid": "6867bddb-50ae-42e8-97f1-4aded7f29ba7"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.png": {
+      "time": 1759476420415.12,
+      "uuid": "99b3859a-a66e-4605-b72c-7aa0afe76ca2"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.atlas": {
+      "time": 1759476420433.121,
+      "uuid": "0894d9ea-99b1-4b0b-868c-4430a6c7f0c7"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.json": {
+      "time": 1759476420435.121,
+      "uuid": "f59687b8-bb55-4910-86f4-1371f049dc1c"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.png": {
+      "time": 1759476420432.121,
+      "uuid": "cd3cbc47-0ae8-47a0-85ab-e345b5b44848"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.png": {
+      "time": 1759476420420.1208,
+      "uuid": "7247819d-0a8c-49c1-a8df-238ea8f2e8d5"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.atlas": {
+      "time": 1759476420438.1204,
+      "uuid": "a81c6d45-9646-432a-9497-ab2fb2df878f"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.json": {
+      "time": 1759476420439.12,
+      "uuid": "6f4ec73f-b782-4cea-8af5-288305fe292e"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.atlas": {
+      "time": 1759476420443.1213,
+      "uuid": "32a38bc8-ab01-4ed3-be0a-7d89d41c20fc"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.json": {
+      "time": 1759476420445.1206,
+      "uuid": "6e1666a1-5ef4-4a11-b5b4-211ea1a3b7e8"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.png": {
+      "time": 1759476420436.1206,
+      "uuid": "061c6180-206b-41cd-b28b-c44dbb4ec568"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.atlas": {
+      "time": 1761561349790.5212,
+      "uuid": "eed00cba-ca84-46ef-9702-9de999c51b83"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.png": {
+      "time": 1759476420441.1223,
+      "uuid": "d7088b28-a0a5-4394-a508-c164e3e9e00a"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.json": {
+      "time": 1761561349793.5159,
+      "uuid": "3f1940e8-9206-4c82-beec-89adc1488cef"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.png": {
+      "time": 1759476420452.121,
+      "uuid": "18c71d9d-abca-4d05-84f9-d9cd52919eca"
+    },
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.png": {
+      "time": 1761561349797.5151,
+      "uuid": "a5043861-2ffb-4efa-b1ad-a97ea42f44f3"
     }
   },
   "missing": {
@@ -389,6 +564,31 @@
       "path": "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\symbols\\glow.prefab",
       "time": 1772022559640.3838,
       "removeTime": 1772022568102
+    },
+    "fe9415b2-b4da-4327-bfb8-8ac2d5c5bc71": {
+      "path": "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\popupError.prefab",
+      "time": 1772709408466.286,
+      "removeTime": 1772709426249
+    },
+    "8e523c0c-d435-476b-b813-95e2734e5951": {
+      "path": "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils\\applyGlowToClusters.ts",
+      "time": 1774877680727.6206,
+      "removeTime": 1774877874393
+    },
+    "adaedf20-d002-46c9-9c12-9800dfbd7e6d": {
+      "path": "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils\\inputs.ts",
+      "time": 1774875811952.1199,
+      "removeTime": 1774882713682
+    },
+    "fd8ff772-19cf-4547-9cf6-d836c7651ff5": {
+      "path": "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\GridManager-UPDATE.ts",
+      "time": 1772616247323.2517,
+      "removeTime": 1774882730978
+    },
+    "84ef1399-a849-47d4-994b-167806403ba7": {
+      "path": "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\RandomImage.ts",
+      "time": 1771861954003.4004,
+      "removeTime": 1774882736952
     }
   }
 }

@@ -1,11 +1,47 @@
-26.02.2026 16:58:54 - log: Load engine in C:\cocos\CocosDashboard\resources\resources\3d\engine
-26.02.2026 16:58:54 - log: Register native engine in C:\cocos\CocosDashboard\resources\resources\3d\engine\native
-26.02.2026 16:58:55 - log: Request namespace: device-list
-26.02.2026 16:59:00 - log: [Scene] meshopt wasm decoder initialized
-26.02.2026 16:59:00 - log: [Scene] [bullet]:bullet wasm lib loaded.
-26.02.2026 16:59:00 - log: [Scene] [box2d]:box2d wasm lib loaded.
-26.02.2026 16:59:00 - log: [Scene] [PHYSICS]: using builtin.
-26.02.2026 16:59:01 - log: [Scene] Cocos Creator v3.8.6
-26.02.2026 16:59:01 - log: [Scene] Using custom pipeline: Builtin
-26.02.2026 16:59:01 - log: [Scene] [PHYSICS]: switch from builtin to bullet.
-26.02.2026 16:59:01 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.
+30.03.2026 16:01:56 - log: Load engine in C:\cocos\CocosDashboard\resources\resources\3d\engine
+30.03.2026 16:01:57 - log: Register native engine in C:\cocos\CocosDashboard\resources\resources\3d\engine\native
+30.03.2026 16:01:57 - log: Request namespace: device-list
+30.03.2026 16:02:03 - log: [Scene] meshopt wasm decoder initialized
+30.03.2026 16:02:03 - log: [Scene] [bullet]:bullet wasm lib loaded.
+30.03.2026 16:02:03 - log: [Scene] [box2d]:box2d wasm lib loaded.
+30.03.2026 16:02:03 - log: [Scene] [PHYSICS]: using builtin.
+30.03.2026 16:02:03 - log: [Scene] Cocos Creator v3.8.6
+30.03.2026 16:02:03 - log: [Scene] Using custom pipeline: Builtin
+30.03.2026 16:02:03 - log: [Scene] [PHYSICS]: switch from builtin to bullet.
+30.03.2026 16:02:03 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.
+30.03.2026 16:33:20 - warn: [Assets] Please set the application in {preferences} -> {program} -> {scriptEditor} to better open the scriptWarn: [Assets] Please set the application in {preferences} -> {program} -> {scriptEditor} to better open the script
+    at console.warn (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at NewConsole.warn (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1510)
+    at findVsCode (C:\cocos\CocosDashboard\resources\app.asar\modules\engine-extensions\extensions\engine-extends\dist\handler\utils.ccc:1:3546)
+    at Object.openCode [as open] (C:\cocos\CocosDashboard\resources\app.asar\modules\engine-extensions\extensions\engine-extends\dist\handler\utils.ccc:1:3282)
+    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
+30.03.2026 17:59:35 - error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.atlas.meta is not exist! will use cache meta.Error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.atlas.meta is not exist! will use cache meta.
+    at console.error (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at NewConsole.error (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1409)
+    at AssetDB._checkAssetStat (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:12237)
+    at AssetDB.refresh (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:8534)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at AssetDBManager._refresh (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\asset-db-manager.ccc:1:10064)
+    at Object.refresh-all-database (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\messages\database.ccc:1:3760)
+    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
+30.03.2026 17:59:35 - error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.json.meta is not exist! will use cache meta.Error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.json.meta is not exist! will use cache meta.
+    at console.error (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at NewConsole.error (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1409)
+    at AssetDB._checkAssetStat (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:12237)
+    at AssetDB.refresh (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:8534)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at AssetDBManager._refresh (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\asset-db-manager.ccc:1:10064)
+    at Object.refresh-all-database (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\messages\database.ccc:1:3760)
+    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
+30.03.2026 17:59:35 - error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.png.meta is not exist! will use cache meta.Error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.png.meta is not exist! will use cache meta.
+    at console.error (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at NewConsole.error (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1409)
+    at AssetDB._checkAssetStat (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:12237)
+    at AssetDB.refresh (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:8534)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at processImmediate (node:internal/timers:449:9)
+    at AssetDBManager._refresh (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\asset-db-manager.ccc:1:10064)
+    at Object.refresh-all-database (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\messages\database.ccc:1:3760)
+    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)

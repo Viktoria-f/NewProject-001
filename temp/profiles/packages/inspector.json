@@ -105,5 +105,10 @@
       "mipfilter": "none",
       "wrapMode": "Clamp"
     }
+  },
+  "009c3074-5bdd-42be-bf67-bac31a0e9ed9@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
   }
 }

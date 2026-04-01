@@ -1,7 +1,7 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, EditBox, instantiate, Node, Prefab, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _crd, ccclass, property, GridManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, EditBox, instantiate, Node, Prefab, find, findCluster, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _class3, _crd, ccclass, property, GridManager;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -9,8 +9,14 @@ System.register(["cc"], function (_export, _context) {
 
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
+  function _reportPossibleCrUseOffindCluster(extras) {
+    _reporterNs.report("findCluster", "./utils/findCluster", _context.meta, extras);
+  }
+
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
@@ -20,20 +26,23 @@ System.register(["cc"], function (_export, _context) {
       instantiate = _cc.instantiate;
       Node = _cc.Node;
       Prefab = _cc.Prefab;
+      find = _cc.find;
+    }, function (_unresolved_2) {
+      findCluster = _unresolved_2.findCluster;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "554b3bwOfNPFLuD00wdHHhI", "GridManager", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'EditBox', 'instantiate', 'Node', 'Prefab']);
+      __checkObsolete__(['_decorator', 'Component', 'EditBox', 'instantiate', 'Node', 'Prefab', 'find', 'error']);
 
       ({
         ccclass,
         property
       } = _decorator);
 
-      _export("GridManager", GridManager = (_dec = ccclass('GridManager'), _dec2 = property(EditBox), _dec3 = property(EditBox), _dec4 = property(Prefab), _dec5 = property(Node), _dec6 = property(EditBox), _dec7 = property(Prefab), _dec8 = property(Prefab), _dec9 = property(Prefab), _dec10 = property(Prefab), _dec11 = property(Prefab), _dec12 = property(Prefab), _dec13 = property(Prefab), _dec14 = property(Prefab), _dec15 = property(Prefab), _dec16 = property(EditBox), _dec17 = property(Prefab), _dec(_class = (_class2 = class GridManager extends Component {
+      _export("GridManager", GridManager = (_dec = ccclass('GridManager'), _dec2 = property(EditBox), _dec3 = property(EditBox), _dec4 = property(EditBox), _dec5 = property(EditBox), _dec6 = property(Prefab), _dec7 = property(Prefab), _dec8 = property(Prefab), _dec9 = property(Node), _dec10 = property(Prefab), _dec(_class = (_class2 = (_class3 = class GridManager extends Component {
         constructor(...args) {
           super(...args);
 
@@ -41,127 +50,166 @@ System.register(["cc"], function (_export, _context) {
 
           _initializerDefineProperty(this, "inputM", _descriptor2, this);
 
-          _initializerDefineProperty(this, "prefab", _descriptor3, this);
+          _initializerDefineProperty(this, "inputY", _descriptor3, this);
 
-          _initializerDefineProperty(this, "gridParent", _descriptor4, this);
+          _initializerDefineProperty(this, "inputX", _descriptor4, this);
 
-          _initializerDefineProperty(this, "inputX", _descriptor5, this);
+          _initializerDefineProperty(this, "prefab", _descriptor5, this);
 
-          _initializerDefineProperty(this, "smb1", _descriptor6, this);
+          _initializerDefineProperty(this, "smbPrefabs", _descriptor6, this);
 
-          _initializerDefineProperty(this, "smb2", _descriptor7, this);
+          _initializerDefineProperty(this, "glow", _descriptor7, this);
 
-          _initializerDefineProperty(this, "smb3", _descriptor8, this);
+          _initializerDefineProperty(this, "gridParent", _descriptor8, this);
 
-          _initializerDefineProperty(this, "smb4", _descriptor9, this);
+          _initializerDefineProperty(this, "popupPrefab", _descriptor9, this);
 
-          _initializerDefineProperty(this, "smb5", _descriptor10, this);
-
-          _initializerDefineProperty(this, "smb6", _descriptor11, this);
-
-          _initializerDefineProperty(this, "smb7", _descriptor12, this);
-
-          _initializerDefineProperty(this, "smb8", _descriptor13, this);
-
-          _initializerDefineProperty(this, "smb9", _descriptor14, this);
-
-          _initializerDefineProperty(this, "inputY", _descriptor15, this);
-
-          _initializerDefineProperty(this, "glow", _descriptor16, this);
+          this.symbols = [];
+          this.gridOffsetX = 0;
+          this.n = void 0;
+          this.m = void 0;
+          this.x = void 0;
+          this.y = void 0;
         }
 
-        generateGrid() {
-          this.gridParent.removeAllChildren();
-          const n = parseInt(this.inputN.string) || 0;
-          const m = parseInt(this.inputM.string) || 0;
-          let b = 140 * m / 2 - 70;
-          const x = parseInt(this.inputX.string) || 0;
-          const y = parseInt(this.inputY.string) || 0;
-          const symbols = [this.smb1, this.smb2, this.smb3, this.smb4, this.smb5, this.smb6, this.smb7, this.smb8, this.smb9];
-          let arr = Array.from({
-            length: n
-          }, () => new Array(m).fill(0));
-          let arrCluster = Array.from({
-            length: n
-          }, () => new Array(m).fill(0));
-          let visited = Array.from({
-            length: n
-          }, () => new Array(m).fill(false));
+        getN() {
+          return this.n;
+        }
 
+        getM() {
+          return this.m;
+        }
+
+        getX() {
+          return this.x;
+        }
+
+        getY() {
+          return this.y;
+        }
+
+        setN() {
+          this.n = parseInt(this.inputN.string) || 0;
+        }
+
+        setM() {
+          this.m = parseInt(this.inputM.string) || 0;
+        }
+
+        setX() {
+          this.x = parseInt(this.inputX.string) || 0;
+        }
+
+        setY() {
+          this.y = parseInt(this.inputY.string) || 0;
+        }
+
+        onUpdateInputs() {
+          try {
+            this.gridParent.removeAllChildren();
+            this.setN();
+            this.setM();
+            this.setX();
+            this.setY();
+
+            if (!(this.getN() > 0 && this.getM() > 0 && this.getX() < 9 && this.getX() > 0 && this.getY() >= 0)) {
+              throw new Error();
+            }
+
+            this.gridOffsetX = GridManager.CELL_WIDTH * this.getM() / 2;
+            this.symbols = new Array(this.getM());
+
+            for (let i = 0; i < this.getM(); i++) {
+              this.symbols[i] = this.smbPrefabs[i];
+            }
+
+            this.createGrid(this.getN(), this.getM(), this.gridOffsetX);
+          } catch (error) {
+            this.showPopup();
+          }
+        }
+
+        onSpin() {
+          let symbolsValues2 = Array.from({
+            length: this.getN()
+          }, () => new Array(this.getM()).fill(0)); // массив символов
+
+          let arrCluster2 = Array.from({
+            length: this.getN()
+          }, () => new Array(this.getM()).fill(0)); // массив кластера
+
+          let visited2 = Array.from({
+            length: this.getN()
+          }, () => new Array(this.getM()).fill(false)); // массив обхода
+
+          this.gridParent.removeAllChildren();
+          this.createGrid(this.getN(), this.getM(), this.gridOffsetX);
+          symbolsValues2 = this.createGridCells(this.getN(), this.getM(), this.getX(), this.gridOffsetX, this.symbols);
+          arrCluster2 = (_crd && findCluster === void 0 ? (_reportPossibleCrUseOffindCluster({
+            error: Error()
+          }), findCluster) : findCluster)(this.getN(), this.getM(), this.getY(), symbolsValues2, visited2);
+          ;
+          this.applyGlowToClusters(this.getN(), this.getM(), this.gridOffsetX, arrCluster2);
+        }
+
+        showPopup() {
+          if (this.popupPrefab) {
+            const popup = instantiate(this.popupPrefab);
+            const canvas = find('Canvas');
+
+            if (canvas) {
+              popup.parent = canvas;
+            }
+
+            popup.setPosition(0, 0);
+          }
+        }
+
+        createGrid(n, m, gridOffsetX) {
           for (let j = 0; j < n; j++) {
             for (let i = 0; i < m; i++) {
               const cell = instantiate(this.prefab);
               this.gridParent.addChild(cell);
-              cell.setPosition(140 * i - b, 110 * j - 180, 0);
-              console.log(`Создан узел: ${cell.name}, позиция: ${cell.position}, активен: ${cell.activeInHierarchy}`);
+              cell.setPosition(GridManager.CELL_WIDTH * i - gridOffsetX, GridManager.CELL_HEIGHT * j - GridManager.GRID_OFFSET_Y, 0);
+              console.log(`Создан узел: ${cell.name}, позиция: ${cell.position}}`);
+            }
+          }
+        }
+
+        createGridCells(n, m, x, gridOffsetX, symbols) {
+          let symbolsValues = Array.from({
+            length: this.getN()
+          }, () => new Array(this.getM()).fill(0));
+
+          for (let j = 0; j < n; j++) {
+            for (let i = 0; i < m; i++) {
               const randomIndex = Math.floor(Math.random() * x);
               const prefabToSpawn = symbols[randomIndex];
               const newNode = instantiate(prefabToSpawn);
               this.node.addChild(newNode);
-              newNode.setPosition(140 * i - b, 110 * j - 180, 0);
+              newNode.setPosition(GridManager.CELL_WIDTH * i - gridOffsetX, GridManager.CELL_HEIGHT * j - GridManager.GRID_OFFSET_Y, 0);
               console.log(`Создан узел: ${randomIndex}`);
-              arr[n - j - 1][i] = randomIndex + 1;
+              symbolsValues[n - j - 1][i] = randomIndex + 1;
             }
-
-            b = 140 * m / 2 - 70;
           }
 
-          console.log(arr);
+          return symbolsValues;
+        }
 
-          function cluster(arr, y) {
-            for (let r = 0; r < n; r++) {
-              for (let c = 0; c < m; c++) {
-                if (!visited[r][c]) {
-                  const group = [];
-                  const targetValue = arr[r][c];
-                  const stack = [[r, c]];
-
-                  while (stack.length > 0) {
-                    const [currR, currC] = stack.pop();
-                    group.push([currR, currC]);
-                    const directions = [[0, 1], [0, -1], [1, 0], [-1, 0]];
-
-                    for (const [dr, dc] of directions) {
-                      const nr = currR + dr;
-                      const nc = currC + dc;
-
-                      if (nr >= 0 && nr < n && nc >= 0 && nc < m && !visited[nr][nc] && arr[nr][nc] === targetValue) {
-                        visited[nr][nc] = true;
-                        stack.push([nr, nc]);
-                      }
-                    }
-                  }
-
-                  if (group.length > y) {
-                    for (const [gr, gc] of group) {
-                      arrCluster[gr][gc] = 1;
-                    }
-                  }
-                }
-              }
-            }
-
-            return arrCluster;
-          }
-
-          let glowArr = cluster(arr, y);
-          console.log(cluster(arr, y));
-
+        applyGlowToClusters(n, m, gridOffsetX, glowArr) {
           for (let j = 0; j < n; j++) {
             for (let i = 0; i < m; i++) {
               if (glowArr[n - j - 1][i]) {
                 const cell = instantiate(this.glow);
                 this.gridParent.addChild(cell);
-                cell.setPosition(140 * i - b, 110 * j - 180, 0);
-                console.log(`Создан узел: ${cell.name}, позиция: ${cell.position}, активен: ${cell.activeInHierarchy}`);
+                cell.setPosition(GridManager.CELL_WIDTH * i - gridOffsetX, GridManager.CELL_HEIGHT * j - GridManager.GRID_OFFSET_Y, 0);
+                console.log(`Создан узел glow: ${cell.name}, позиция: ${cell.position}}`);
               }
             }
-
-            b = 140 * m / 2 - 70;
           }
         }
 
-      }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "inputN", [_dec2], {
+      }, _class3.CELL_WIDTH = 140, _class3.CELL_HEIGHT = 110, _class3.GRID_OFFSET_Y = 180, _class3), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "inputN", [_dec2], {
         configurable: true,
         enumerable: true,
         writable: true,
@@ -175,98 +223,49 @@ System.register(["cc"], function (_export, _context) {
         initializer: function () {
           return null;
         }
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "prefab", [_dec4], {
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "inputY", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "gridParent", [_dec5], {
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "inputX", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "inputX", [_dec6], {
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "prefab", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "smb1", [_dec7], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "smbPrefabs", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "glow", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "smb2", [_dec8], {
+      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "gridParent", [_dec9], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "smb3", [_dec9], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "smb4", [_dec10], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "smb5", [_dec11], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "smb6", [_dec12], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "smb7", [_dec13], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "smb8", [_dec14], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "smb9", [_dec15], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "inputY", [_dec16], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor16 = _applyDecoratedDescriptor(_class2.prototype, "glow", [_dec17], {
+      }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, "popupPrefab", [_dec10], {
         configurable: true,
         enumerable: true,
         writable: true,

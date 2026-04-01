@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 4875.1555,
+      "mTimestamp": 4969.0667,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -682,7 +682,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 5883.8739,
+      "mTimestamp": 7355002.9937,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -784,7 +784,7 @@
           }
         },
         {
-          "value": "file:///C:/cocos/games/NewProject-001/assets/scripts/RandomImage.ts",
+          "value": "file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts",
           "resolved": "__unresolved_7",
           "loc": {
             "start": {
@@ -793,7 +793,21 @@
             },
             "end": {
               "line": 11,
-              "column": 76
+              "column": 75
+            }
+          }
+        },
+        {
+          "value": "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts",
+          "resolved": "__unresolved_8",
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 7
+            },
+            "end": {
+              "line": 12,
+              "column": 82
             }
           }
         }
@@ -852,7 +866,14 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/cocos/games/NewProject-001/assets/scripts/RandomImage.ts"
+            "url": "file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts"
           },
           "messages": []
         }
@@ -1421,7 +1442,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1772114334804,
+      "mTimestamp": 1774875717169,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -1585,10 +1606,94 @@
     },
     "file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts": {
       "mTimestamp": {
-        "mtime": 1772027470055.411,
+        "mtime": 1774883064927.505,
         "uuid": "554b36f0-39f3-4f14-bb83-d34c1d1c7848"
       },
       "chunkId": "555cda6d8a0fc04109de5a532ee7616ae4282e68",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 87
+            },
+            "end": {
+              "line": 1,
+              "column": 91
+            }
+          }
+        },
+        {
+          "value": "./utils/findCluster",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 28
+            },
+            "end": {
+              "line": 2,
+              "column": 49
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/RandomImage.ts": {
+      "mTimestamp": {
+        "mtime": 1771861954003.4004,
+        "uuid": "84ef1399-a849-47d4-994b-167806403ba7"
+      },
+      "chunkId": "f88a31430951e538d5ae09934b799118eedd1fa4",
       "imports": [
         {
           "value": "cc"
@@ -1635,12 +1740,12 @@
         }
       ]
     },
-    "file:///C:/cocos/games/NewProject-001/assets/scripts/RandomImage.ts": {
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager-UPDATE.ts": {
       "mTimestamp": {
-        "mtime": 1771861954003.4004,
-        "uuid": "84ef1399-a849-47d4-994b-167806403ba7"
+        "mtime": 1772616247323.2517,
+        "uuid": "fd8ff772-19cf-4547-9cf6-d836c7651ff5"
       },
-      "chunkId": "f88a31430951e538d5ae09934b799118eedd1fa4",
+      "chunkId": "67d8960399ba645c5f02831c4af4536e9e143f54",
       "imports": [
         {
           "value": "cc"
@@ -1658,6 +1763,266 @@
             "end": {
               "line": 1,
               "column": 78
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts": {
+      "mTimestamp": {
+        "mtime": 1772712055147.2932,
+        "uuid": "899f54b7-f187-494e-aa82-b8be627dfdb3"
+      },
+      "chunkId": "44f13734686ccbd4c4f4b9d446dfae7e3d6d4672",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 57
+            },
+            "end": {
+              "line": 1,
+              "column": 61
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts": {
+      "mTimestamp": {
+        "mtime": 1774877383715.1267,
+        "uuid": "ef1aac11-51fb-4f56-b16d-29fbff1d5a72"
+      },
+      "chunkId": "133b976f3e1734f06d0118b1c5828eaeccdb53be",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/inputs.ts": {
+      "mTimestamp": {
+        "mtime": 1774875811952.1199,
+        "uuid": "adaedf20-d002-46c9-9c12-9800dfbd7e6d"
+      },
+      "chunkId": "b72ef6672b02d0cea82105577c4e7c6cc2a859f1",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/appl.ts": {
+      "mTimestamp": {
+        "mtime": 1774877591979.7979,
+        "uuid": "8e523c0c-d435-476b-b813-95e2734e5951"
+      },
+      "chunkId": "21e899a597978c9f1eceb5da7f25da6dbf8736d7",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/applyGlowToClusters.ts": {
+      "mTimestamp": {
+        "mtime": 1774877680727.6206,
+        "uuid": "8e523c0c-d435-476b-b813-95e2734e5951"
+      },
+      "chunkId": "1c82871f9b8ab41b3a2cdaec3a0efe2f536e0a38",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
             }
           }
         }

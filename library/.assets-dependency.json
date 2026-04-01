@@ -2,11 +2,53 @@
   "path": {
     "C:\\cocos\\games\\NewProject-001\\assets\\spine\\dynamite.json": [
       "C:\\cocos\\games\\NewProject-001\\assets\\spine\\dynamite.atlas"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.json": [
+      "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.atlas"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.json": [
+      "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.atlas"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.json": [
+      "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.atlas"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.json": [
+      "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.atlas"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.json": [
+      "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.atlas"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.json": [
+      "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.atlas"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.json": [
+      "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.atlas"
     ]
   },
   "uuid": {
     "C:\\cocos\\games\\NewProject-001\\assets\\spine\\dynamite.json": [
       "09b4aa1c-bb7f-4931-ab9e-0dfd8c8773ec@6c48a"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\a.json": [
+      "99b3859a-a66e-4605-b72c-7aa0afe76ca2@6c48a"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\bag.json": [
+      "7247819d-0a8c-49c1-a8df-238ea8f2e8d5@6c48a"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\j.json": [
+      "cd3cbc47-0ae8-47a0-85ab-e345b5b44848@6c48a"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\k.json": [
+      "061c6180-206b-41cd-b28b-c44dbb4ec568@6c48a"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\q.json": [
+      "d7088b28-a0a5-4394-a508-c164e3e9e00a@6c48a"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\scatter.json": [
+      "18c71d9d-abca-4d05-84f9-d9cd52919eca@6c48a"
+    ],
+    "C:\\cocos\\games\\NewProject-001\\assets\\spine\\wild.json": [
+      "a5043861-2ffb-4efa-b1ad-a97ea42f44f3@6c48a"
     ]
   }
 }

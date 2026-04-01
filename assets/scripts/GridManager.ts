@@ -1,67 +1,140 @@
-import { _decorator, Component, EditBox, instantiate, Node, Prefab } from 'cc';
+import { _decorator, Component, EditBox, instantiate, Node, Prefab, find, error } from 'cc';
+import { findCluster } from "./utils/findCluster";
 const { ccclass, property } = _decorator;
 
 @ccclass('GridManager')
 export class GridManager extends Component {
 
-
     @property(EditBox) inputN: EditBox = null!;
     @property(EditBox) inputM: EditBox = null!;
-    @property(Prefab) prefab: Prefab = null!;
-    @property(Node) gridParent: Node = null!;
-
-
-    @property(EditBox) inputX: EditBox = null!;
-    @property(Prefab) smb1: Prefab = null!;
-    @property(Prefab) smb2: Prefab = null!;
-    @property(Prefab) smb3: Prefab = null!;
-    @property(Prefab) smb4: Prefab = null!;
-    @property(Prefab) smb5: Prefab = null!;
-    @property(Prefab) smb6: Prefab = null!;
-    @property(Prefab) smb7: Prefab = null!;
-    @property(Prefab) smb8: Prefab = null!;
-    @property(Prefab) smb9: Prefab = null!;
-
-
     @property(EditBox) inputY: EditBox = null!;
+    @property(EditBox) inputX: EditBox = null!;
+
+    @property(Prefab) prefab: Prefab = null!;
+    @property(Prefab) smbPrefabs: Prefab[] = [];
     @property(Prefab) glow: Prefab = null!;
+    @property(Node) gridParent: Node = null!;
+    @property(Prefab) popupPrefab: Prefab = null!;
+
+
+    private static readonly CELL_WIDTH = 140;
+    private static readonly CELL_HEIGHT = 110;
+    private static readonly GRID_OFFSET_Y = 180;
+
+    private symbols: Prefab[] = [];
+    private gridOffsetX: number = 0;
+
+    private n: number;
+    private m: number;
+    private x: number;
+    private y: number;
+
+    getN() { return this.n; };
+    getM() { return this.m; };
+    getX() { return this.x; };
+    getY() { return this.y; };
+
+    setN() { this.n = parseInt(this.inputN.string) || 0; };
+    setM() { this.m = parseInt(this.inputM.string) || 0; };
+    setX() { this.x = parseInt(this.inputX.string) || 0; };
+    setY() { this.y = parseInt(this.inputY.string) || 0; };
+
+    
+    onUpdateInputs() {
+
+        try {
+            
+            this.gridParent.removeAllChildren();
+
+            this.setN();
+            this.setM();
+            this.setX();
+            this.setY();
+
+            if (
+              !(this.getN() > 0 && this.getM() > 0 && this.getX() < 9 && this.getX() > 0 && this.getY() >= 0)
+            ) {
+              throw new Error();
+            }
+
+            this.gridOffsetX = (GridManager.CELL_WIDTH * this.getM()) / 2; 
+
+            this.symbols = new Array(this.getM());
+
+            for (let i = 0; i < this.getM(); i++) {
+              this.symbols[i] = this.smbPrefabs[i];
+            }
+        
+            this.createGrid(this.getN(), this.getM(), this.gridOffsetX);
+   
+        } catch (error) {
+            this.showPopup();
+        }
+
+    }
+
+
+
+    onSpin() {
+
+        let symbolsValues2: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0)); // массив символов
+        
+        let arrCluster2: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0));  // массив кластера
+        
+        let visited2: boolean[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(false));  // массив обхода
+        
+        this.gridParent.removeAllChildren();
+        this.createGrid(this.getN(), this.getM(), this.gridOffsetX);        
+        symbolsValues2 = this.createGridCells(this.getN(), this.getM(), this.getX(), this.gridOffsetX, this.symbols);
+
+        arrCluster2 = findCluster(this.getN(), this.getM(), this.getY(), symbolsValues2, visited2);;
+
+        this.applyGlowToClusters(this.getN(), this.getM(), this.gridOffsetX, arrCluster2);
+
+        
+    }
 
     
 
-    generateGrid() {
-        
-        this.gridParent.removeAllChildren();
-        
-        const n = parseInt(this.inputN.string) || 0;
-        const m = parseInt(this.inputM.string) || 0;
+    showPopup() {
+        if (this.popupPrefab) {
 
-        
-        let b = 140*m/2 - 70;
+            const popup = instantiate(this.popupPrefab);
+
+            const canvas = find('Canvas'); 
+            if (canvas) {
+                popup.parent = canvas;
+            }
+
+            popup.setPosition(0, 0);
+        }
+    }
 
 
-        const x = parseInt(this.inputX.string) || 0;
-        const y = parseInt(this.inputY.string) || 0;
 
-
-        const symbols: Prefab[] = [this.smb1, this.smb2, this.smb3, this.smb4, this.smb5, this.smb6, this.smb7, this.smb8, this.smb9];
-
-        let arr: number[][] = Array.from({ length: n }, () => new Array(m).fill(0));
-
-        let arrCluster: number[][] = Array.from({ length: n }, () => new Array(m).fill(0));
-
-        let visited: boolean[][] = Array.from({ length: n }, () => new Array(m).fill(false));
-
- 
+    createGrid(n: number, m: number, gridOffsetX: number) {
 
         for (let j = 0; j < n; j++){
             for (let i = 0; i < m; i++){
                 const cell = instantiate(this.prefab) as Node;
                 this.gridParent.addChild(cell);
 
-                cell.setPosition((140 * i ) - b, (110 * j) - 180, 0)
-                console.log(`Создан узел: ${cell.name}, позиция: ${cell.position}, активен: ${cell.activeInHierarchy}`);
+                cell.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
+                console.log(`Создан узел: ${cell.name}, позиция: ${cell.position}}`);
+            }
+            
+        }
+        
+    };
 
 
+
+    createGridCells(n: number, m: number, x: number, gridOffsetX: number, symbols: Prefab[]): number[][] {
+        let symbolsValues: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0));
+
+        for (let j = 0; j < n; j++){
+            for (let i = 0; i < m; i++){
+                
                 const randomIndex = Math.floor(Math.random() * x);
 
                 const prefabToSpawn = symbols[randomIndex];
@@ -69,71 +142,21 @@ export class GridManager extends Component {
                 const newNode = instantiate(prefabToSpawn) as Node;
                 this.node.addChild(newNode);
 
-                newNode.setPosition((140 * i ) - b, (110 * j) - 180, 0)
+                newNode.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
                 console.log(`Создан узел: ${randomIndex}`);
 
-                arr[n-j-1][i] = randomIndex + 1;
-
+                symbolsValues[n-j-1][i] = randomIndex + 1;
 
             }
             
-            b = 140*m/2 - 70;
         }
 
-
-        console.log(arr);
-
-
-        function cluster(arr, y: number) {
+        return symbolsValues;
+        
+    };
 
 
-            for (let r = 0; r < n; r++) {
-                for (let c = 0; c < m; c++) {
-                    if (!visited[r][c]) {
-                        const group = [];
-                        const targetValue = arr[r][c];
-
-                        const stack = [[r, c]];
-
-                        while (stack.length > 0) {
-                        const [currR, currC] = stack.pop();
-                        group.push([currR, currC]);
-
-                        
-                        const directions = [[0, 1], [0, -1], [1, 0], [-1, 0]];
-                        for (const [dr, dc] of directions) {
-                            const nr = currR + dr;
-                            const nc = currC + dc;
-
-                            if (nr >= 0 && nr < n && nc >= 0 && nc < m &&
-                            !visited[nr][nc] && arr[nr][nc] === targetValue) {
-                                visited[nr][nc] = true;
-                                stack.push([nr, nc]);
-                                }
-                            }
-                        }
-
-                        
-                        if (group.length > y) {
-                            for (const [gr, gc] of group) {
-                               arrCluster[gr][gc] = 1;
-                            }   
-                        }
-                    }
-                }
-            }
-            return arrCluster;
-        }
-                    
-                    
-
-
-        let glowArr: number[][] = cluster(arr, y)
-        console.log(cluster(arr, y));
-
-
-
-
+    applyGlowToClusters(n: number, m: number, gridOffsetX: number, glowArr: number[][]) {
 
         for (let j = 0; j < n; j++){
             for (let i = 0; i < m; i++){
@@ -141,19 +164,15 @@ export class GridManager extends Component {
                     const cell = instantiate(this.glow) as Node;
                     this.gridParent.addChild(cell);
 
-                    cell.setPosition((140 * i) - b, (110 * j) - 180, 0)
-                    console.log(`Создан узел: ${cell.name}, позиция: ${cell.position}, активен: ${cell.activeInHierarchy}`);
+                    cell.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
+                    console.log(`Создан узел glow: ${cell.name}, позиция: ${cell.position}}`);
                 }
-
-
 
             }
             
-            b = 140*m/2 - 70;
         }
+        
+    };         
 
 
-    }
 }
-
-
