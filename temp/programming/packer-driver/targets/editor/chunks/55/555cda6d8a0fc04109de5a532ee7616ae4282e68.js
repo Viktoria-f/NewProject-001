@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, EditBox, instantiate, Node, Prefab, find, sp, findCluster, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _class3, _crd, ccclass, property, GridManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, EditBox, instantiate, Node, Prefab, find, sp, findCluster, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _class3, _crd, ccclass, property, GridManager;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -43,7 +43,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         property
       } = _decorator);
 
-      _export("GridManager", GridManager = (_dec = ccclass("GridManager"), _dec2 = property(EditBox), _dec3 = property(EditBox), _dec4 = property(EditBox), _dec5 = property(EditBox), _dec6 = property(Prefab), _dec7 = property(Prefab), _dec8 = property(Prefab), _dec9 = property(Node), _dec10 = property(Prefab), _dec11 = property(Node), _dec12 = property(Node), _dec13 = property(Node), _dec(_class = (_class2 = (_class3 = class GridManager extends Component {
+      _export("GridManager", GridManager = (_dec = ccclass('GridManager'), _dec2 = property(EditBox), _dec3 = property(EditBox), _dec4 = property(EditBox), _dec5 = property(EditBox), _dec6 = property(Prefab), _dec7 = property(Prefab), _dec8 = property(Prefab), _dec9 = property(Node), _dec10 = property(Prefab), _dec11 = property(Node), _dec12 = property(Node), _dec(_class = (_class2 = (_class3 = class GridManager extends Component {
         constructor(...args) {
           super(...args);
 
@@ -68,8 +68,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           _initializerDefineProperty(this, "symbolsLayer", _descriptor10, this);
 
           _initializerDefineProperty(this, "glowLayer", _descriptor11, this);
-
-          _initializerDefineProperty(this, "boxLayer", _descriptor12, this);
 
           this.symbols = [];
           this.gridOffsetX = 0;
@@ -114,6 +112,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         onUpdateInputs() {
           try {
             this.gridParent.removeAllChildren();
+            this.symbolsLayer.removeAllChildren();
+            this.glowLayer.removeAllChildren();
             this.setN();
             this.setM();
             this.setX();
@@ -150,11 +150,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           }, () => new Array(this.getM()).fill(false)); // массив обхода
 
           this.gridParent.removeAllChildren();
+          this.symbolsLayer.removeAllChildren();
+          this.glowLayer.removeAllChildren();
           this.createGrid(this.getN(), this.getM(), this.gridOffsetX);
           symbolsValuesOnSpin = this.createGridCells(this.getN(), this.getM(), this.getX(), this.gridOffsetX, this.symbols);
           arrClusterOnSpin = (_crd && findCluster === void 0 ? (_reportPossibleCrUseOffindCluster({
             error: Error()
           }), findCluster) : findCluster)(this.getN(), this.getM(), this.getY(), symbolsValuesOnSpin, visitedOnSpin);
+          ;
           this.applyGlowToClusters(this.getN(), this.getM(), this.gridOffsetX, arrClusterOnSpin);
           this.applyAnimationOnCluster(this.getN(), this.getM(), arrClusterOnSpin);
         }
@@ -162,7 +165,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         showPopup() {
           if (this.popupPrefab) {
             const popup = instantiate(this.popupPrefab);
-            const canvas = find("Canvas");
+            const canvas = find('Canvas');
 
             if (canvas) {
               popup.parent = canvas;
@@ -193,7 +196,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               const randomIndex = Math.floor(Math.random() * x);
               const prefabToSpawn = symbols[randomIndex];
               const newNode = instantiate(prefabToSpawn);
-              this.node.addChild(newNode);
+              this.symbolsLayer.addChild(newNode);
               newNode.setPosition(GridManager.CELL_WIDTH * i - gridOffsetX, GridManager.CELL_HEIGHT * j - GridManager.GRID_OFFSET_Y, 0);
               console.log(`Создан узел: ${newNode.name}, создан узел: ${randomIndex}`);
               symbolsValues[n - j - 1][i] = randomIndex + 1;
@@ -208,7 +211,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             for (let i = 0; i < m; i++) {
               if (glowArr[n - j - 1][i]) {
                 const cell = instantiate(this.glow);
-                this.gridParent.addChild(cell);
+                this.glowLayer.addChild(cell);
                 cell.setPosition(GridManager.CELL_WIDTH * i - gridOffsetX, GridManager.CELL_HEIGHT * j - GridManager.GRID_OFFSET_Y, 0);
                 console.log(`Создан узел glow: ${cell.name}, позиция: ${cell.position}}`);
               }
@@ -217,9 +220,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }
 
         applyAnimationOnCluster(n, m, glowArr) {
-          let arrAll = this.gridParent.children;
-          console.log(glowArr.length);
-          const symbolsArr = arrAll.slice(n * m, n * m * 2);
+          // let arrAll = this.gridParent.children;
+          // const symbolsArr = arrAll.slice(n * m, n* m*2)
+          const symbolsArr = this.symbolsLayer.children;
 
           for (let j = 0; j < n; j++) {
             for (let i = 0; i < m; i++) {
@@ -303,13 +306,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           return null;
         }
       }), _descriptor11 = _applyDecoratedDescriptor(_class2.prototype, "glowLayer", [_dec12], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
-        }
-      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "boxLayer", [_dec13], {
         configurable: true,
         enumerable: true,
         writable: true,

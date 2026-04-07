@@ -1929,3 +1929,303 @@ Feature changed: false
 16:38:06.512 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
 16:38:06.513 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
 16:38:06.527 debug: Target(preview) ends with cost 196.3015000000596ms.
+16:48:46.505 debug: Dispatch build request for time accumulated 1 asset changes.
+16:48:46.506 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:48:46.506 debug: Target(editor) build started.
+16:48:46.507 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:13:20 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:24:00 GMT+0300 (Москва, стандартное время)
+16:48:46.508 debug: Inspect cce:/internal/x/prerequisite-imports
+16:48:46.518 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.60 ms
+16:48:46.520 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:48:46.520 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:48:46.521 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:48:46.521 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:48:46.521 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:48:46.522 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:48:46.522 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:48:46.522 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:38:04 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:48:45 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:48:46.522 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:48:46.565 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 42.10 ms
+16:48:46.566 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:48:46.567 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:48:46.567 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:48:46.567 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:48:46.567 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:48:46.567 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:48:46.567 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:48:46.568 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:48:46.577 debug: Target(editor) ends with cost 70.87139999866486ms.
+16:48:46.577 debug: Target(preview) build started.
+16:48:46.579 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:13:20 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:24:00 GMT+0300 (Москва, стандартное время)
+16:48:46.579 debug: Inspect cce:/internal/x/prerequisite-imports
+16:48:46.590 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.40 ms
+16:48:46.592 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:48:46.592 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:48:46.593 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:48:46.593 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:48:46.594 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:48:46.594 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:48:46.595 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:48:46.595 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:38:04 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:48:45 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:48:46.595 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:48:46.693 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 98.30 ms
+16:48:46.696 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:48:46.697 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:48:46.698 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:48:46.698 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:48:46.698 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:48:46.698 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:48:46.698 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:48:46.699 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:48:46.708 debug: Target(preview) ends with cost 130.45600000023842ms.
+16:49:53.182 debug: Dispatch build request for time accumulated 1 asset changes.
+16:49:53.183 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:49:53.183 debug: Target(editor) build started.
+16:49:53.186 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:24:00 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:25:07 GMT+0300 (Москва, стандартное время)
+16:49:53.186 debug: Inspect cce:/internal/x/prerequisite-imports
+16:49:53.196 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 10.10 ms
+16:49:53.199 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:49:53.199 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:49:53.200 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:49:53.200 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:49:53.200 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:49:53.201 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:49:53.201 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:49:53.201 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:48:45 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:49:52 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:49:53.201 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:49:53.264 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 63.00 ms
+16:49:53.267 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:49:53.267 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:49:53.268 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:49:53.268 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:49:53.268 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:49:53.268 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:49:53.268 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:49:53.268 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:49:53.281 debug: Target(editor) ends with cost 97.0515000000596ms.
+16:49:53.281 debug: Target(preview) build started.
+16:49:53.283 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:24:00 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:25:07 GMT+0300 (Москва, стандартное время)
+16:49:53.283 debug: Inspect cce:/internal/x/prerequisite-imports
+16:49:53.298 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 14.50 ms
+16:49:53.300 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:49:53.301 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:49:53.302 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:49:53.303 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:49:53.303 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:49:53.304 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:49:53.304 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:49:53.304 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:48:45 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:49:52 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:49:53.304 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:49:53.395 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 90.90 ms
+16:49:53.397 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:49:53.398 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:49:53.399 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:49:53.399 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:49:53.399 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:49:53.399 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:49:53.399 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:49:53.400 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:49:53.412 debug: Target(preview) ends with cost 131.07609999924898ms.
+16:51:12.490 debug: Dispatch build request for time accumulated 1 asset changes.
+16:51:12.494 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:51:12.495 debug: Target(editor) build started.
+16:51:12.499 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:25:07 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:26:26 GMT+0300 (Москва, стандартное время)
+16:51:12.499 debug: Inspect cce:/internal/x/prerequisite-imports
+16:51:12.513 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 13.80 ms
+16:51:12.517 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:51:12.518 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:51:12.518 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:51:12.519 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:51:12.519 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:51:12.519 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:51:12.520 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:51:12.520 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:49:52 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:51:11 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:51:12.520 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:51:12.613 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 93.50 ms
+16:51:12.618 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:51:12.619 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:51:12.619 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:51:12.620 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:51:12.620 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:51:12.620 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:51:12.620 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:51:12.620 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:51:12.639 debug: Target(editor) ends with cost 143.98450000025332ms.
+16:51:12.639 debug: Target(preview) build started.
+16:51:12.642 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:25:07 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:26:26 GMT+0300 (Москва, стандартное время)
+16:51:12.643 debug: Inspect cce:/internal/x/prerequisite-imports
+16:51:12.669 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 26.20 ms
+16:51:12.671 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:51:12.672 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:51:12.673 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:51:12.673 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:51:12.674 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:51:12.674 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:51:12.674 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:51:12.675 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:49:52 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:51:11 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:51:12.675 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:51:12.868 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 193.10 ms
+16:51:12.873 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:51:12.874 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:51:12.875 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:51:12.876 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:51:12.876 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:51:12.876 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:51:12.876 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:51:12.877 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:51:12.904 debug: Target(preview) ends with cost 264.3850999996066ms.
+16:55:05.783 debug: Dispatch build request for time accumulated 1 asset changes.
+16:55:05.786 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+16:55:05.787 debug: Target(editor) build started.
+16:55:05.789 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:26:26 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:30:19 GMT+0300 (Москва, стандартное время)
+16:55:05.789 debug: Inspect cce:/internal/x/prerequisite-imports
+16:55:05.803 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 13.30 ms
+16:55:05.806 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:55:05.806 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:55:05.807 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:55:05.807 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:55:05.808 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:55:05.808 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:55:05.808 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:55:05.808 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:51:11 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:55:04 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:55:05.808 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:55:05.887 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 78.10 ms
+16:55:05.890 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:55:05.892 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:55:05.893 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:55:05.894 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:55:05.894 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:55:05.894 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:55:05.894 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:55:05.894 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:55:05.912 debug: Target(editor) ends with cost 124.84759999997914ms.
+16:55:05.912 debug: Target(preview) build started.
+16:55:05.914 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:26:26 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:30:19 GMT+0300 (Москва, стандартное время)
+16:55:05.914 debug: Inspect cce:/internal/x/prerequisite-imports
+16:55:05.935 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 20.30 ms
+16:55:05.937 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+16:55:05.938 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+16:55:05.938 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+16:55:05.939 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+16:55:05.940 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+16:55:05.940 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+16:55:05.941 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+16:55:05.941 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:51:11 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 16:55:04 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+16:55:05.941 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+16:55:06.072 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 131.10 ms
+16:55:06.077 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+16:55:06.078 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:55:06.078 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+16:55:06.078 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+16:55:06.078 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:55:06.078 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:55:06.078 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+16:55:06.079 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+16:55:06.099 debug: Target(preview) ends with cost 186.4688000008464ms.
+17:07:50.872 debug: Dispatch build request for time accumulated 1 asset changes.
+17:07:50.873 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+17:07:50.874 debug: Target(editor) build started.
+17:07:50.876 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:30:19 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:43:04 GMT+0300 (Москва, стандартное время)
+17:07:50.876 debug: Inspect cce:/internal/x/prerequisite-imports
+17:07:50.885 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 8.70 ms
+17:07:50.887 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+17:07:50.888 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+17:07:50.888 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+17:07:50.889 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+17:07:50.890 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+17:07:50.890 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+17:07:50.890 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+17:07:50.890 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:55:04 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 17:07:49 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+17:07:50.890 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+17:07:50.937 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 46.80 ms
+17:07:50.943 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+17:07:50.944 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:07:50.945 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+17:07:50.945 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+17:07:50.945 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:07:50.945 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:07:50.945 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:07:50.946 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:07:50.963 debug: Target(editor) ends with cost 89.37269999831915ms.
+17:07:50.963 debug: Target(preview) build started.
+17:07:50.965 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:30:19 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:43:04 GMT+0300 (Москва, стандартное время)
+17:07:50.965 debug: Inspect cce:/internal/x/prerequisite-imports
+17:07:50.976 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 11.40 ms
+17:07:50.978 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+17:07:50.979 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+17:07:50.980 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+17:07:50.980 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+17:07:50.981 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+17:07:50.981 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+17:07:50.982 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+17:07:50.982 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 16:55:04 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 17:07:49 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+17:07:50.982 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+17:07:51.129 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 146.90 ms
+17:07:51.131 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+17:07:51.131 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:07:51.132 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+17:07:51.133 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+17:07:51.133 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:07:51.133 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:07:51.133 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:07:51.134 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:07:51.146 debug: Target(preview) ends with cost 182.8487999998033ms.
+17:08:25.556 debug: Dispatch build request for time accumulated 1 asset changes.
+17:08:25.557 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+17:08:25.557 debug: Target(editor) build started.
+17:08:25.559 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:43:04 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:43:39 GMT+0300 (Москва, стандартное время)
+17:08:25.559 debug: Inspect cce:/internal/x/prerequisite-imports
+17:08:25.567 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 8.70 ms
+17:08:25.570 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+17:08:25.571 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+17:08:25.571 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+17:08:25.571 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+17:08:25.572 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+17:08:25.572 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+17:08:25.572 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+17:08:25.572 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 17:07:49 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 17:08:22 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+17:08:25.572 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+17:08:25.622 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 49.90 ms
+17:08:25.625 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+17:08:25.625 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:08:25.626 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+17:08:25.626 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+17:08:25.626 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:08:25.626 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:08:25.626 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:08:25.627 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:08:25.639 debug: Target(editor) ends with cost 82.07409999892116ms.
+17:08:25.640 debug: Target(preview) build started.
+17:08:25.641 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 07:43:04 GMT+0300 (Москва, стандартное время), Current mtime: Thu Jan 01 1970 07:43:39 GMT+0300 (Москва, стандартное время)
+17:08:25.641 debug: Inspect cce:/internal/x/prerequisite-imports
+17:08:25.655 debug: transform url: 'cce:/internal/x/prerequisite-imports' costs: 14.10 ms
+17:08:25.657 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-dof-pass.ts.
+17:08:25.657 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-pass.ts.
+17:08:25.658 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-settings.ts.
+17:08:25.658 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline-types.ts.
+17:08:25.658 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/default_renderpipeline/builtin-pipeline.ts.
+17:08:25.659 debug: Resolve file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+17:08:25.659 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts.
+17:08:25.659 debug: Detected change: file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts. Last mtime: Tue Apr 07 2026 17:07:49 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848, Current mtime: Tue Apr 07 2026 17:08:22 GMT+0300 (Москва, стандартное время)@554b36f0-39f3-4f14-bb83-d34c1d1c7848
+17:08:25.659 debug: Inspect file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts
+17:08:25.736 debug: transform url: 'file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts' costs: 77.20 ms
+17:08:25.738 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts.
+17:08:25.739 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:08:25.739 debug: Resolve file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts from cce:/internal/x/prerequisite-imports as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts.
+17:08:25.739 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/code-quality/cr.mjs.
+17:08:25.739 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:08:25.739 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:08:25.739 debug: Resolve cc from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as cce:/internal/x/cc.
+17:08:25.740 debug: Resolve ./utils/findCluster from file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts as file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts.
+17:08:25.753 debug: Target(preview) ends with cost 113.29129999876022ms.

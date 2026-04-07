@@ -50,6 +50,8 @@ export class GridManager extends Component {
         try {
             
             this.gridParent.removeAllChildren();
+            this.symbolsLayer.removeAllChildren();
+            this.glowLayer.removeAllChildren();
 
             this.setN();
             this.setM();
@@ -89,11 +91,15 @@ export class GridManager extends Component {
         let visitedOnSpin: boolean[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(false));  // массив обхода
         
         this.gridParent.removeAllChildren();
+        this.symbolsLayer.removeAllChildren();
+        this.glowLayer.removeAllChildren();
+
         this.createGrid(this.getN(), this.getM(), this.gridOffsetX);        
         symbolsValuesOnSpin = this.createGridCells(this.getN(), this.getM(), this.getX(), this.gridOffsetX, this.symbols);
 
         arrClusterOnSpin = findCluster(this.getN(), this.getM(), this.getY(), symbolsValuesOnSpin, visitedOnSpin);;
 
+        
         this.applyGlowToClusters(this.getN(), this.getM(), this.gridOffsetX, arrClusterOnSpin);
         this.applyAnimationOnCluster(this.getN(), this.getM(), arrClusterOnSpin);
 
@@ -145,7 +151,7 @@ export class GridManager extends Component {
                 const prefabToSpawn = symbols[randomIndex];
 
                 const newNode = instantiate(prefabToSpawn) as Node;
-                this.node.addChild(newNode);
+                this.symbolsLayer.addChild(newNode);
 
                 newNode.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
                 console.log(`Создан узел: ${newNode.name}, создан узел: ${randomIndex}`);
@@ -166,7 +172,7 @@ export class GridManager extends Component {
             for (let i = 0; i < m; i++){
                 if (glowArr[n-j-1][i]) {
                     const cell = instantiate(this.glow) as Node;
-                    this.gridParent.addChild(cell);
+                    this.glowLayer.addChild(cell);
 
                     cell.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
                     console.log(`Создан узел glow: ${cell.name}, позиция: ${cell.position}}`);
@@ -179,10 +185,11 @@ export class GridManager extends Component {
 
     applyAnimationOnCluster(n: number, m: number, glowArr: number[][]) {
 
-        let arrAll = this.gridParent.children;
+        // let arrAll = this.gridParent.children;
 
-        console.log(glowArr.length)
-        const symbolsArr = arrAll.slice(n * m, n* m*2)
+        // const symbolsArr = arrAll.slice(n * m, n* m*2)
+
+        const symbolsArr = this.symbolsLayer.children;
 
         for (let j = 0; j < n; j++){
             for (let i = 0; i < m; i++){
