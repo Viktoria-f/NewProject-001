@@ -1,5 +1,6 @@
-import { _decorator, Component, EditBox, instantiate, Node, Prefab, find, error } from 'cc';
+import { _decorator, Component, EditBox, instantiate, Node, Prefab, find, error, sp } from 'cc';
 import { findCluster } from "./utils/findCluster";
+import { spineAnimation } from './utils/spineAnimation';
 const { ccclass, property } = _decorator;
 
 @ccclass('GridManager')
@@ -15,6 +16,10 @@ export class GridManager extends Component {
     @property(Prefab) glow: Prefab = null!;
     @property(Node) gridParent: Node = null!;
     @property(Prefab) popupPrefab: Prefab = null!;
+
+
+    @property(Node) symbolsLayer: Node = null!;
+    @property(Node) glowLayer: Node = null!;
 
 
     private static readonly CELL_WIDTH = 140;
@@ -77,19 +82,20 @@ export class GridManager extends Component {
 
     onSpin() {
 
-        let symbolsValues2: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0)); // массив символов
+        let symbolsValuesOnSpin: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0)); // массив номеров символов
         
-        let arrCluster2: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0));  // массив кластера
+        let arrClusterOnSpin: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0));  // массив кластера
         
-        let visited2: boolean[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(false));  // массив обхода
+        let visitedOnSpin: boolean[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(false));  // массив обхода
         
         this.gridParent.removeAllChildren();
         this.createGrid(this.getN(), this.getM(), this.gridOffsetX);        
-        symbolsValues2 = this.createGridCells(this.getN(), this.getM(), this.getX(), this.gridOffsetX, this.symbols);
+        symbolsValuesOnSpin = this.createGridCells(this.getN(), this.getM(), this.getX(), this.gridOffsetX, this.symbols);
 
-        arrCluster2 = findCluster(this.getN(), this.getM(), this.getY(), symbolsValues2, visited2);;
+        arrClusterOnSpin = findCluster(this.getN(), this.getM(), this.getY(), symbolsValuesOnSpin, visitedOnSpin);;
 
-        this.applyGlowToClusters(this.getN(), this.getM(), this.gridOffsetX, arrCluster2);
+        this.applyGlowToClusters(this.getN(), this.getM(), this.gridOffsetX, arrClusterOnSpin);
+        this.applyAnimationOnCluster(this.getN(), this.getM(), arrClusterOnSpin);
 
         
     }
@@ -121,8 +127,7 @@ export class GridManager extends Component {
 
                 cell.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
                 console.log(`Создан узел: ${cell.name}, позиция: ${cell.position}}`);
-            }
-            
+            }    
         }
         
     };
@@ -143,12 +148,11 @@ export class GridManager extends Component {
                 this.node.addChild(newNode);
 
                 newNode.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
-                console.log(`Создан узел: ${randomIndex}`);
+                console.log(`Создан узел: ${newNode.name}, создан узел: ${randomIndex}`);
 
                 symbolsValues[n-j-1][i] = randomIndex + 1;
 
-            }
-            
+            }    
         }
 
         return symbolsValues;
@@ -167,12 +171,31 @@ export class GridManager extends Component {
                     cell.setPosition((GridManager.CELL_WIDTH * i) - gridOffsetX, (GridManager.CELL_HEIGHT * j) - GridManager.GRID_OFFSET_Y, 0)
                     console.log(`Создан узел glow: ${cell.name}, позиция: ${cell.position}}`);
                 }
-
-            }
-            
+            }   
         }
         
-    };         
+    };  
+    
+
+    applyAnimationOnCluster(n: number, m: number, glowArr: number[][]) {
+
+        let arrAll = this.gridParent.children;
+
+        console.log(glowArr.length)
+        const symbolsArr = arrAll.slice(n * m, n* m*2)
+
+        for (let j = 0; j < n; j++){
+            for (let i = 0; i < m; i++){
+                
+                if (glowArr[n - j - 1][i]) {
+                    let winSymbol = symbolsArr[(j*m) + i];
+                    let spine = winSymbol.getComponent(sp.Skeleton);
+                    spine.setAnimation(0, "win", true);
+                }
+            }    
+        }
+
+    }
 
 
 }

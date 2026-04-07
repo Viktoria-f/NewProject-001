@@ -1,0 +1,11 @@
+{
+    "systemInfo": {
+        "arch": "x64",
+        "cpu": "12th Gen Intel(R) Core(TM) i5-12400",
+        "version": "Windows 10 Pro"
+    },
+    "sceneListMap": {
+        "29c487df-c126-4fdc-8002-d8f2bf51db84": "C:\\cocos\\games\\NewProject-001\\assets\\scene\\scene.scene"
+    },
+    "deviceMd5": "6735e8106567caa89dc6206aad3dd28d"
+}

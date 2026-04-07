@@ -10,10 +10,11 @@
     "file:///C:/cocos/CocosDashboard/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "./chunks/ba/baafa2e86819d1601a3cc2831eb47a7da1ff5fdc.js",
     "file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts": "./chunks/55/555cda6d8a0fc04109de5a532ee7616ae4282e68.js",
     "file:///C:/cocos/games/NewProject-001/assets/scripts/popupError.ts": "./chunks/44/44f13734686ccbd4c4f4b9d446dfae7e3d6d4672.js",
-    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts": "./chunks/13/133b976f3e1734f06d0118b1c5828eaeccdb53be.js"
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts": "./chunks/13/133b976f3e1734f06d0118b1c5828eaeccdb53be.js",
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts": "./chunks/6c/6cf7809d9e4125940a572b2de8a93c182c3dbf69.js"
   },
   "scopes": {
-    "./chunks/13/133b976f3e1734f06d0118b1c5828eaeccdb53be.js": {
+    "./chunks/6c/6cf7809d9e4125940a572b2de8a93c182c3dbf69.js": {
       "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
     },
     "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js": {
@@ -64,6 +65,9 @@
       "__unresolved_8": "cce:/internal/x/cc-fu/2d",
       "__unresolved_9": "cce:/internal/x/cc-fu/sorting"
     },
+    "./chunks/13/133b976f3e1734f06d0118b1c5828eaeccdb53be.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
     "./chunks/44/44f13734686ccbd4c4f4b9d446dfae7e3d6d4672.js": {
       "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
     },
@@ -109,7 +113,8 @@
       "__unresolved_5": "./chunks/ba/baafa2e86819d1601a3cc2831eb47a7da1ff5fdc.js",
       "__unresolved_6": "./chunks/55/555cda6d8a0fc04109de5a532ee7616ae4282e68.js",
       "__unresolved_7": "./chunks/44/44f13734686ccbd4c4f4b9d446dfae7e3d6d4672.js",
-      "__unresolved_8": "./chunks/13/133b976f3e1734f06d0118b1c5828eaeccdb53be.js"
+      "__unresolved_8": "./chunks/13/133b976f3e1734f06d0118b1c5828eaeccdb53be.js",
+      "__unresolved_9": "./chunks/6c/6cf7809d9e4125940a572b2de8a93c182c3dbf69.js"
     }
   }
 }

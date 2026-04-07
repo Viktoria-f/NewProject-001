@@ -169,7 +169,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "Input Error.\n\nPlease, enter the correct values.\nn > 0,  m > 0,  0 < x < 9,  y >= 0 ",
+    "_string": "Input Error.\n\nPlease, enter the correct values.\nn > 0,  m > 0,  0 < x < 5,  y >= 0 ",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
@@ -714,6 +714,7 @@
       "__id__": 0
     },
     "fileId": "60mF/eT9lMX7Fxu2nKYf6t",
+    "instance": null,
     "targetOverrides": null
   }
 ]

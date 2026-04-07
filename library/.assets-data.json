@@ -503,15 +503,11 @@
         "a6efb2ad-79fb-48fd-a8d7-7072604d68e5@f9941",
         "848b5c71-4e7f-4269-83fc-d66d83780139@f9941",
         "0fa4039b-43a1-455a-8348-5cf7ac55e7cd",
-        "54a519dc-b61c-4885-bc8b-92652def30c1",
-        "728c566e-2923-437b-8709-0aacdb571b4e",
-        "1c33bb9d-9f89-4809-9181-59bd93c9e77d",
-        "02990ef3-c2b9-4b8f-be1b-30a217bb483d",
-        "5a285041-cc88-4cea-a01b-5dc1d4fac61d",
-        "a007b55e-cc59-43da-961e-241bc8d8b3f6",
-        "c5a00494-8bf1-482f-be4e-8316294e7740",
-        "fa0e4acc-87c1-4b81-ad46-09a6ec7117e8",
-        "a51b5987-3fb1-499f-8ccf-7537611f3b37",
+        "81b6e31b-2b1d-4b4b-bbc9-478c2ddce582",
+        "fc975aad-cf9c-42f2-bf69-ad15861621cd",
+        "eceee413-b5cc-4587-9812-483ed1c6c485",
+        "114bf99e-b72d-495a-8a1b-c174aaa8c6da",
+        "f857f944-9723-45c1-975a-a05eb95422ec",
         "dcc4359f-d301-43b2-9ad4-acf99376a6b6",
         "d5d08855-ff5e-4fe6-b568-89a646277746",
         "bd1bcaba-bd7d-4a71-b143-997c882383e4@f9941",
@@ -1141,6 +1137,112 @@
     "value": {
       "depends": [
         "a5043861-2ffb-4efa-b1ad-a97ea42f44f3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a4af6b61-b0b9-4545-8f5c-08f9e03187c8": {
+    "url": "db://assets/scripts/utils/spineAnimation.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "743ec124-7274-4a4e-be87-5869b63daa8e": {
+    "url": "db://assets/prefabs/spine-symbols",
+    "value": {},
+    "versionCode": 1
+  },
+  "81b6e31b-2b1d-4b4b-bbc9-478c2ddce582": {
+    "url": "db://assets/prefabs/spine-symbols/a.prefab",
+    "value": {
+      "depends": [
+        "c87aa41a-bfb5-4b6b-91f9-5f2e05ba2493"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f857f944-9723-45c1-975a-a05eb95422ec": {
+    "url": "db://assets/prefabs/spine-symbols/bag.prefab",
+    "value": {
+      "depends": [
+        "ae16fec5-77f0-4d92-9432-be336c7601b0"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2f6db769-2a1b-477b-9f87-883373142687": {
+    "url": "db://assets/prefabs/spine-symbols/dinamite.prefab",
+    "value": {
+      "depends": [
+        "096fb211-fd66-4bfc-bc5e-00273b23fd55"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "eceee413-b5cc-4587-9812-483ed1c6c485": {
+    "url": "db://assets/prefabs/spine-symbols/j.prefab",
+    "value": {
+      "depends": [
+        "6867bddb-50ae-42e8-97f1-4aded7f29ba7"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "fc975aad-cf9c-42f2-bf69-ad15861621cd": {
+    "url": "db://assets/prefabs/spine-symbols/k.prefab",
+    "value": {
+      "depends": [
+        "f59687b8-bb55-4910-86f4-1371f049dc1c"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "114bf99e-b72d-495a-8a1b-c174aaa8c6da": {
+    "url": "db://assets/prefabs/spine-symbols/q.prefab",
+    "value": {
+      "depends": [
+        "6f4ec73f-b782-4cea-8af5-288305fe292e"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0d0ac1e8-8e36-444a-af2d-8270b8b8624d": {
+    "url": "db://assets/prefabs/spine-symbols/scatter.prefab",
+    "value": {
+      "depends": [
+        "6e1666a1-5ef4-4a11-b5b4-211ea1a3b7e8"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "71658765-f988-45d6-926a-7940f858963f": {
+    "url": "db://assets/prefabs/spine-symbols/wild.prefab",
+    "value": {
+      "depends": [
+        "3f1940e8-9206-4c82-beec-89adc1488cef"
+      ],
+      "dependScripts": [
+        "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
       ]
     },
     "versionCode": 1

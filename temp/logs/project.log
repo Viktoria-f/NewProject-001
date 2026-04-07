@@ -1,47 +1,126 @@
-30.03.2026 16:01:56 - log: Load engine in C:\cocos\CocosDashboard\resources\resources\3d\engine
-30.03.2026 16:01:57 - log: Register native engine in C:\cocos\CocosDashboard\resources\resources\3d\engine\native
-30.03.2026 16:01:57 - log: Request namespace: device-list
-30.03.2026 16:02:03 - log: [Scene] meshopt wasm decoder initialized
-30.03.2026 16:02:03 - log: [Scene] [bullet]:bullet wasm lib loaded.
-30.03.2026 16:02:03 - log: [Scene] [box2d]:box2d wasm lib loaded.
-30.03.2026 16:02:03 - log: [Scene] [PHYSICS]: using builtin.
-30.03.2026 16:02:03 - log: [Scene] Cocos Creator v3.8.6
-30.03.2026 16:02:03 - log: [Scene] Using custom pipeline: Builtin
-30.03.2026 16:02:03 - log: [Scene] [PHYSICS]: switch from builtin to bullet.
-30.03.2026 16:02:03 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.
-30.03.2026 16:33:20 - warn: [Assets] Please set the application in {preferences} -> {program} -> {scriptEditor} to better open the scriptWarn: [Assets] Please set the application in {preferences} -> {program} -> {scriptEditor} to better open the script
+07.04.2026 12:24:45 - log: Load engine in C:\cocos\CocosDashboard\resources\resources\3d\engine
+07.04.2026 12:24:45 - log: Register native engine in C:\cocos\CocosDashboard\resources\resources\3d\engine\native
+07.04.2026 12:24:45 - log: Request namespace: device-list
+07.04.2026 12:24:51 - log: [Scene] meshopt wasm decoder initialized
+07.04.2026 12:24:51 - log: [Scene] [box2d]:box2d wasm lib loaded.
+07.04.2026 12:24:51 - log: [Scene] [bullet]:bullet wasm lib loaded.
+07.04.2026 12:24:51 - log: [Scene] [PHYSICS]: using builtin.
+07.04.2026 12:24:51 - log: [Scene] Cocos Creator v3.8.6
+07.04.2026 12:24:51 - log: [Scene] Using custom pipeline: Builtin
+07.04.2026 12:24:51 - log: [Scene] [PHYSICS]: switch from builtin to bullet.
+07.04.2026 12:24:51 - log: [Scene] [PHYSICS2D]: switch from box2d-wasm to box2d.
+07.04.2026 14:19:24 - error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:cocosCocosDashboardile:C:cocosgamesNewProject-001assetsscriptsGridManager.ts: Unexpected token (214:21)
+
+  212 |         console.log(glowArr)
+  213 |
+> 214 |         for (let j = ; j < n; j++){
+      |                      ^
+  215 |             for (let i = 0; i < m; i++){
+  216 |                 
+  217 |                 if (glowArr[n - j - 1][i]) {
+    at Object.execute (file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/7b/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2Fcocos%2Fgames%2FNewProject-001%2Fassets%2Fscripts%2FGridManager.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5Ccocos%5CCocosDashboard%5Cfile%3A%5CC%3A%5Ccocos%5Cgames%5CNewProject-001%5Cassets%5Cscripts%5CGridManager.ts%3A%20Unexpected%20token%20(214%3A21)%0A%0A%20%20212%20%7C%20%20%20%20%20%20%20%20%20console.log(glowArr)%0A%20%20213%20%7C%0A%3E%20214%20%7C%20%20%20%20%20%20%20%20%20for%20(let%20j%20%3D%20%3B%20j%20%3C%20n%3B%20j%2B%2B)%7B%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%20215%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20for%20(let%20i%20%3D%200%3B%20i%20%3C%20m%3B%20i%2B%2B)%7B%0A%20%20216%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20217%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20(glowArr%5Bn%20-%20j%20-%201%5D%5Bi%5D)%20%7B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)Error: [Scene] {hidden(::SceneExecutorImportExceptionHandler::)} Error: SyntaxError: C:cocosCocosDashboardile:C:cocosgamesNewProject-001assetsscriptsGridManager.ts: Unexpected token (214:21)
+
+  212 |         console.log(glowArr)
+  213 |
+> 214 |         for (let j = ; j < n; j++){
+  217 |                 if (glowArr[n - j - 1][i]) {
+    at Object.execute (file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/7b/data:text/javascript,%0A%2F%2F%20This%20module%20is%20auto-generated%20to%20report%20error%20emitted%20when%20try%20to%20load%20module%20file%3A%2F%2F%2FC%3A%2Fcocos%2Fgames%2FNewProject-001%2Fassets%2Fscripts%2FGridManager.ts%20at%20runtime.%0Athrow%20new%20Error(%60SyntaxError%3A%20C%3A%5Ccocos%5CCocosDashboard%5Cfile%3A%5CC%3A%5Ccocos%5Cgames%5CNewProject-001%5Cassets%5Cscripts%5CGridManager.ts%3A%20Unexpected%20token%20(214%3A21)%0A%0A%20%20212%20%7C%20%20%20%20%20%20%20%20%20console.log(glowArr)%0A%20%20213%20%7C%0A%3E%20214%20%7C%20%20%20%20%20%20%20%20%20for%20(let%20j%20%3D%20%3B%20j%20%3C%20n%3B%20j%2B%2B)%7B%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5E%0A%20%20215%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20for%20(let%20i%20%3D%200%3B%20i%20%3C%20m%3B%20i%2B%2B)%7B%0A%20%20216%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20217%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20(glowArr%5Bn%20-%20j%20-%201%5D%5Bi%5D)%20%7B%60)%3B%0A%20%20%20%20%20%20%20%20:3:7)
+    at doExec (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+    at Logger._logHandler (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\startup\log.ccc:1:487)
+    at Logger.record (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:458)
+    at console.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:1414)
+    at console.error (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
+    at ScriptManager._handleImportException (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:5408)
+    at Executor.importExceptionHandler [as _importExceptionHandler] (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:3604)
+    at Executor._onModuleLoaded (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:401:22)
+    at SystemJS.onload (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:99:18)
+    at triggerOnload (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:270:10)
+    at doExec (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:538:7)
+    at postOrderExec (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+    at C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:440:12
+    at file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:8:13
+    at Object.execute (file:///C:/cocos/games/NewProject-001/temp/programming/packer-driver/targets/editor/chunks/6d/cce:/internal/x/prerequisite-imports:4:1)
+    at Executor._importPrerequisiteModules (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:358:13)
+    at Executor.reload (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\lib-programming\src\executor\index.ts:235:13)
+    at C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1787
+    at GlobalEnv.processQueue (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:2184)
+    at GlobalEnv.record (C:\cocos\CocosDashboard\resources\app.asar\builtin\scene\dist\script\3d\manager\scripts.ccc:1:1955)
+07.04.2026 14:19:24 - warn: [Scene] Missing class: 554b3bwOfNPFLuD00wdHHhIError: [Scene] Missing class: 554b3bwOfNPFLuD00wdHHhI
     at console.warn (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
-    at NewConsole.warn (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1510)
-    at findVsCode (C:\cocos\CocosDashboard\resources\app.asar\modules\engine-extensions\extensions\engine-extends\dist\handler\utils.ccc:1:3546)
-    at Object.openCode [as open] (C:\cocos\CocosDashboard\resources\app.asar\modules\engine-extensions\extensions\engine-extends\dist\handler\utils.ccc:1:3282)
-    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
-30.03.2026 17:59:35 - error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.atlas.meta is not exist! will use cache meta.Error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.atlas.meta is not exist! will use cache meta.
+    at Object.classFinder (C:\cocos\CocosDashboard\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:982)
+    at _Deserializer.classFinder [as _classFinder] (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:111535:34)
+    at _Deserializer._deserializeTypeTaggedObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46686:30)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46640:29)
+    at _Deserializer._deserializeAndAssignField (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46807:38)
+    at _Deserializer._deserializeArray (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46668:40)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46646:29)
+    at _Deserializer._deserializeAndAssignField (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46819:36)
+    at eval (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46408:15)
+    at _Deserializer._deserializeFireClass (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46790:11)
+    at _Deserializer._deserializeInto (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46732:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46704:18)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46640:29)
+    at _Deserializer._deserializeAndAssignField (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46807:38)
+    at _Deserializer._deserializeArray (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46668:40)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46646:29)
+    at _Deserializer._deserializeAndAssignField (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46819:36)
+    at eval (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46408:15)
+    at _Deserializer._deserializeFireClass (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46790:11)
+    at _Deserializer._deserializeInto (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46732:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46704:18)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46640:29)
+    at _Deserializer._deserializeAndAssignField (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46807:38)
+    at _Deserializer._deserializeArray (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46668:40)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46646:29)
+    at _Deserializer._deserializeAndAssignField (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46819:36)
+    at eval (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46408:15)
+    at _Deserializer._deserializeFireClass (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46790:11)
+    at _Deserializer._deserializeInto (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46732:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46704:18)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46640:29)
+    at _Deserializer._deserializeAndAssignField (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46807:38)
+    at eval (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46408:15)
+    at _Deserializer._deserializeFireClass (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46790:11)
+    at _Deserializer._deserializeInto (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46732:18)
+    at _Deserializer._deserializeTypeTaggedObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46704:18)
+    at _Deserializer._deserializeObject (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46640:29)
+    at _Deserializer.deserialize (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46612:42)
+    at deserializeDynamic (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:46462:30)
+    at deserialize (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:47774:13)
+    at deserializeAsset (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:111548:15)
+    at parseImport (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:115393:22)
+    at Parser.parse (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:115476:11)
+    at parse (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:115201:20)
+    at Pipeline._flow (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:115759:11)
+    at eval (C:\cocos\CocosDashboard\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:115769:22)
+07.04.2026 14:19:24 - error: [Scene] Script "554b3bwOfNPFLuD00wdHHhI" attached to "GridParent" is missing or invalid. Detailed information:
+Node path: "Canvas/GridParent"
+Script UUID: "554b36f0-39f3-4f14-bb83-d34c1d1c7848"
+Class ID: "554b3bwOfNPFLuD00wdHHhI"
+Error: [Scene] Script "554b3bwOfNPFLuD00wdHHhI" attached to "GridParent" is missing or invalid. Detailed information:
+Node path: "Canvas/GridParent"
+Script UUID: "554b36f0-39f3-4f14-bb83-d34c1d1c7848"
+Class ID: "554b3bwOfNPFLuD00wdHHhI"
+
     at console.error (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
-    at NewConsole.error (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1409)
-    at AssetDB._checkAssetStat (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:12237)
-    at AssetDB.refresh (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\messages\database.ccc:1:3760)
-    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
-30.03.2026 17:59:35 - error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.json.meta is not exist! will use cache meta.Error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.json.meta is not exist! will use cache meta.
-    at console.error (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
-    at NewConsole.error (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1409)
-    at AssetDB._checkAssetStat (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:12237)
-    at AssetDB.refresh (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\messages\database.ccc:1:3760)
-    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
-30.03.2026 17:59:35 - error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.png.meta is not exist! will use cache meta.Error: [Assets] C:\cocos\games\NewProject-001\assets\spine\dynamite.png.meta is not exist! will use cache meta.
-    at console.error (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@sentry\src\instrument\console.ts:40:20)
-    at NewConsole.error (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1409)
-    at AssetDB._checkAssetStat (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:12237)
-    at AssetDB.refresh (C:\cocos\CocosDashboard\resources\app.asar\node_modules\@editor\asset-db\libs\asset-db.ccc:1:8534)
-    at runNextTicks (node:internal/process/task_queues:60:5)
-    at processImmediate (node:internal/timers:449:9)
-    at AssetDBManager._refresh (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\asset-db-manager.ccc:1:10064)
-    at Object.refresh-all-database (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\messages\database.ccc:1:3760)
-    at Ipc.<anonymous> (C:\cocos\CocosDashboard\resources\app.asar\builtin\asset-db\dist\worker\ipc.ccc:1:530)
+    at report (C:\cocos\CocosDashboard\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:25)
+    at reportByWalker (C:\cocos\CocosDashboard\resources\app.asar\builtin\engine\dist\editor-extends\missing-reporter\missing-class-reporter.ccc:7:127)

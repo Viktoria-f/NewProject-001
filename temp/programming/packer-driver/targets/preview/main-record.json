@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 4969.0667,
+      "mTimestamp": 4919.2265,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -682,7 +682,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 7355002.9937,
+      "mTimestamp": 15200233.4612,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -810,6 +810,20 @@
               "column": 82
             }
           }
+        },
+        {
+          "value": "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts",
+          "resolved": "__unresolved_9",
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 7
+            },
+            "end": {
+              "line": 13,
+              "column": 85
+            }
+          }
         }
       ],
       "type": "esm",
@@ -874,6 +888,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/findCluster.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts"
           },
           "messages": []
         }
@@ -1442,7 +1463,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1774875717169,
+      "mTimestamp": 1775553885464,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -1606,7 +1627,7 @@
     },
     "file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts": {
       "mTimestamp": {
-        "mtime": 1774883064927.505,
+        "mtime": 1775569084609.5476,
         "uuid": "554b36f0-39f3-4f14-bb83-d34c1d1c7848"
       },
       "chunkId": "555cda6d8a0fc04109de5a532ee7616ae4282e68",
@@ -1626,11 +1647,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 87
+              "column": 91
             },
             "end": {
               "line": 1,
-              "column": 91
+              "column": 95
             }
           }
         },
@@ -2023,6 +2044,58 @@
             "end": {
               "line": 1,
               "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/spineAnimation.ts": {
+      "mTimestamp": {
+        "mtime": 1775568512235.5552,
+        "uuid": "a4af6b61-b0b9-4545-8f5c-08f9e03187c8"
+      },
+      "chunkId": "6cf7809d9e4125940a572b2de8a93c182c3dbf69",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 58
+            },
+            "end": {
+              "line": 1,
+              "column": 62
             }
           }
         }
