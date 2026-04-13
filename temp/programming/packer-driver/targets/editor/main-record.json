@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 4882.1258,
+      "mTimestamp": 4475.906,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -976,7 +976,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 17019368.9308,
+      "mTimestamp": 5518745.3245,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1757,7 +1757,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1775553885464,
+      "mTimestamp": 1776070595290,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -1921,7 +1921,7 @@
     },
     "file:///C:/cocos/games/NewProject-001/assets/scripts/GridManager.ts": {
       "mTimestamp": {
-        "mtime": 1775570902268.7815,
+        "mtime": 1776076106331.1274,
         "uuid": "554b36f0-39f3-4f14-bb83-d34c1d1c7848"
       },
       "chunkId": "555cda6d8a0fc04109de5a532ee7616ae4282e68",
@@ -2390,6 +2390,58 @@
             "end": {
               "line": 1,
               "column": 62
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/cocos/games/NewProject-001/assets/scripts/utils/parameters.ts": {
+      "mTimestamp": {
+        "mtime": 1776075578013.0178,
+        "uuid": "db711909-e3d6-4519-b260-8f71f07928e7"
+      },
+      "chunkId": "ed721b7ea0897b7b6bd7c77cdae1dfb4b958fb5b",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
             }
           }
         }

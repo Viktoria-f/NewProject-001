@@ -194,7 +194,7 @@
       "time": 1771608882653.3586
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\GridManager.ts": {
-      "time": 1775570902268.7815,
+      "time": 1776076106331.1274,
       "uuid": "554b36f0-39f3-4f14-bb83-d34c1d1c7848"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\prefabs\\symbols.meta": {
@@ -303,7 +303,7 @@
       "uuid": "d5d08855-ff5e-4fe6-b568-89a646277746"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils": {
-      "time": 1775478480293.0354,
+      "time": 1776076100024.9434,
       "uuid": "b06b0d63-3251-40d0-98bd-2e181f9fdf2a"
     },
     "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils.meta": {
@@ -659,6 +659,11 @@
       "path": "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\RandomImage.ts",
       "time": 1771861954003.4004,
       "removeTime": 1774882736952
+    },
+    "db711909-e3d6-4519-b260-8f71f07928e7": {
+      "path": "C:\\cocos\\games\\NewProject-001\\assets\\scripts\\utils\\parameters.ts",
+      "time": 1776075578013.0178,
+      "removeTime": 1776076100030
     }
   }
 }

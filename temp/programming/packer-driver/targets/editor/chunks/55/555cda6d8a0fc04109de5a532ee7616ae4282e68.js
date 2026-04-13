@@ -119,7 +119,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             this.setX();
             this.setY();
 
-            if (!(this.getN() > 0 && this.getM() > 0 && this.getX() < 9 && this.getX() > 0 && this.getY() >= 0)) {
+            if (!(this.getN() > 0 && this.getM() > 0 && this.getX() < this.smbPrefabs.length && this.getX() > 0 && this.getY() >= 0)) {
               throw new Error();
             }
 
@@ -139,7 +139,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         onSpin() {
           let symbolsValuesOnSpin = Array.from({
             length: this.getN()
-          }, () => new Array(this.getM()).fill(0)); // массив номеров символов
+          }, () => new Array(this.getM()).fill(0)); // массив символов
 
           let arrClusterOnSpin = Array.from({
             length: this.getN()

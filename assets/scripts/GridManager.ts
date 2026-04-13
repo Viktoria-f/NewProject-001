@@ -1,6 +1,5 @@
 import { _decorator, Component, EditBox, instantiate, Node, Prefab, find, error, sp } from 'cc';
 import { findCluster } from "./utils/findCluster";
-import { spineAnimation } from './utils/spineAnimation';
 const { ccclass, property } = _decorator;
 
 @ccclass('GridManager')
@@ -17,17 +16,15 @@ export class GridManager extends Component {
     @property(Node) gridParent: Node = null!;
     @property(Prefab) popupPrefab: Prefab = null!;
 
-
     @property(Node) symbolsLayer: Node = null!;
     @property(Node) glowLayer: Node = null!;
 
+    private symbols: Prefab[] = [];
+    private gridOffsetX: number = 0;
 
     private static readonly CELL_WIDTH = 140;
     private static readonly CELL_HEIGHT = 110;
     private static readonly GRID_OFFSET_Y = 180;
-
-    private symbols: Prefab[] = [];
-    private gridOffsetX: number = 0;
 
     private n: number;
     private m: number;
@@ -59,13 +56,12 @@ export class GridManager extends Component {
             this.setY();
 
             if (
-              !(this.getN() > 0 && this.getM() > 0 && this.getX() < 9 && this.getX() > 0 && this.getY() >= 0)
+              !(this.getN() > 0 && this.getM() > 0 && this.getX() < this.smbPrefabs.length && this.getX() > 0 && this.getY() >= 0)
             ) {
               throw new Error();
             }
 
             this.gridOffsetX = (GridManager.CELL_WIDTH * this.getM()) / 2; 
-
             this.symbols = new Array(this.getM());
 
             for (let i = 0; i < this.getM(); i++) {
@@ -84,7 +80,7 @@ export class GridManager extends Component {
 
     onSpin() {
 
-        let symbolsValuesOnSpin: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0)); // массив номеров символов
+        let symbolsValuesOnSpin: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0)); // массив символов
         
         let arrClusterOnSpin: number[][] = Array.from({ length: this.getN() }, () => new Array(this.getM()).fill(0));  // массив кластера
         
@@ -98,11 +94,9 @@ export class GridManager extends Component {
         symbolsValuesOnSpin = this.createGridCells(this.getN(), this.getM(), this.getX(), this.gridOffsetX, this.symbols);
 
         arrClusterOnSpin = findCluster(this.getN(), this.getM(), this.getY(), symbolsValuesOnSpin, visitedOnSpin);;
-
         
         this.applyGlowToClusters(this.getN(), this.getM(), this.gridOffsetX, arrClusterOnSpin);
         this.applyAnimationOnCluster(this.getN(), this.getM(), arrClusterOnSpin);
-
         
     }
 
@@ -112,7 +106,6 @@ export class GridManager extends Component {
         if (this.popupPrefab) {
 
             const popup = instantiate(this.popupPrefab);
-
             const canvas = find('Canvas'); 
             if (canvas) {
                 popup.parent = canvas;
@@ -147,7 +140,6 @@ export class GridManager extends Component {
             for (let i = 0; i < m; i++){
                 
                 const randomIndex = Math.floor(Math.random() * x);
-
                 const prefabToSpawn = symbols[randomIndex];
 
                 const newNode = instantiate(prefabToSpawn) as Node;
@@ -157,7 +149,6 @@ export class GridManager extends Component {
                 console.log(`Создан узел: ${newNode.name}, создан узел: ${randomIndex}`);
 
                 symbolsValues[n-j-1][i] = randomIndex + 1;
-
             }    
         }
 
@@ -185,10 +176,6 @@ export class GridManager extends Component {
 
     applyAnimationOnCluster(n: number, m: number, glowArr: number[][]) {
 
-        // let arrAll = this.gridParent.children;
-
-        // const symbolsArr = arrAll.slice(n * m, n* m*2)
-
         const symbolsArr = this.symbolsLayer.children;
 
         for (let j = 0; j < n; j++){
@@ -201,8 +188,6 @@ export class GridManager extends Component {
                 }
             }    
         }
-
     }
-
 
 }
